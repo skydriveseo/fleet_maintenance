@@ -1,23 +1,25 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <meta name="robots" content="index,follow">
-<meta name="googlebot" content="noodp, noydir">
 <meta name="language" content="en-us">
 <meta name="distribution" content="Global">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta property="og:title" content="Fleet Maintenance" />
+<meta name="keywords" content="Fleet Maintenance" />
 <title>4 Ways For Best Fleet Maintenance</title>
 <meta name="description" content="Fleet maintenance is the best way to track the progress, schedule, performance, and expense of all vehicles used in the business's operations.">
+<link rel="canonical" href="https://best-fleet-maintenance.netlify.app/" />
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																								<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/s3-urls/application.css">
 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/web-blog/style.css">
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
 	.aligncenter {text-align: center;}
 </style>
 </head>
+
 
 <body>
 <header>
@@ -147,6 +149,40 @@ $(".menu").click(function(){
 });
 
 //---- Header nav Script End ---//
+$(document).bind("contextmenu",function(e){
+  return false;
+    });
+	
+	
+
+    $(document).keydown(function (event) {
+    // Prevent F12 -
+    if (event.keyCode == 123 || 121) {
+       return false;
+    }
+    // Prevent Ctrl+a = disable select all
+    // Prevent Ctrl+u = disable view page source
+    // Prevent Ctrl+s = disable save
+    if (event.ctrlKey && (event.keyCode === 85 || event.keyCode === 83 || event.keyCode ===65 || event.keyCode ===67 || event.keyCode ===86 || event.keyCode ===17 || event.keyCode ===80 || event.keyCode ===121)) {
+       return false;
+    }
+    // Prevent Ctrl+Shift+I = disabled debugger console using keys open
+    else if (event.ctrlKey && event.shiftKey && event.keyCode === 73)
+    {
+       return false;
+    }
+    });
+
+$(document).ready(function(){  
+$(document).keydown(function(event) {  
+   //event.ctrlKey = check ctrl key is press or not  
+   //event.which = check for F7  
+   // event.which =check for v key  
+   if (event.ctrlKey==true && (event.which == '118' || event.which == '86')) {  
+      event.preventDefault();  
+      }  
+   });  
+});
 </script>
 
 </body>
